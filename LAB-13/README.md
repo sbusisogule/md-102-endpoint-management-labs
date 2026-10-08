@@ -18,13 +18,13 @@ A Windows encryption policy was created in Microsoft Intune as part of the endpo
 
 The policy was assigned to the `MD102-Pilot-Users` group for pilot testing.
 
-BitLocker was used to demonstrate centrally managed Windows device encryption and the protection of data stored on the endpoint.
+The lab focused on the administrative configuration of BitLocker as a centrally managed Windows endpoint-security control.
 
 ## Security Context
 
 BitLocker provides volume-level encryption for Windows devices.
 
-In an enterprise environment, managing BitLocker through Intune allows administrators to standardize encryption settings and integrate device encryption into the broader endpoint-security strategy.
+In an enterprise environment, managing BitLocker through Intune allows administrators to establish standardized encryption requirements and incorporate disk encryption into the broader endpoint-security strategy.
 
 The configuration complements other controls implemented during the MD-102 labs, including:
 
@@ -48,9 +48,17 @@ The configuration complements other controls implemented during the MD-102 labs,
 
 The BitLocker policy was created and assigned in Microsoft Intune.
 
-The configuration was reviewed as part of the Windows endpoint security policy set.
+The policy configuration was reviewed as part of the Windows endpoint-security policy set.
 
-Intune policy reporting can take time to update, so the lab was documented based on the configured policy rather than waiting for delayed reporting.
+Intune reporting can take time to update. The lab therefore documents the configured policy and assignment rather than claiming successful endpoint application.
+
+**Endpoint encryption status was not independently validated as part of this lab.**
+
+The lab does not claim that:
+
+* BitLocker was successfully enabled on `INTUNE-USER`
+* A BitLocker recovery key was successfully escrowed
+* Intune reported successful policy application
 
 ## Skills Demonstrated
 
@@ -63,6 +71,12 @@ Intune policy reporting can take time to update, so the lab was documented based
 
 ## Outcome
 
-LAB-13 demonstrated how BitLocker can be incorporated into an enterprise Windows endpoint-management strategy using Microsoft Intune.
+LAB-13 demonstrated the configuration and assignment of a centrally managed BitLocker policy through Microsoft Intune.
 
-The lab established the foundation for centrally managed disk encryption and reinforced the importance of protecting data at rest on managed Windows devices.
+The lab established the administrative foundation for managed Windows disk encryption while maintaining a clear distinction between policy configuration and endpoint-level validation.
+
+## Evidence Status
+
+**Status: Configured / Assignment Documented**
+
+Endpoint encryption and recovery-key escrow were not independently validated in this lab.
