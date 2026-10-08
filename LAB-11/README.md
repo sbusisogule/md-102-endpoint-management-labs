@@ -2,7 +2,7 @@
 
 ## Objective
 
-Configure a Microsoft Windows Autopilot deployment profile for user-driven Windows 11 deployment and Microsoft Entra join.
+Configure and evaluate a Microsoft Windows Autopilot deployment profile for user-driven Windows 11 deployment and Microsoft Entra join.
 
 ## Environment
 
@@ -14,7 +14,7 @@ Configure a Microsoft Windows Autopilot deployment profile for user-driven Windo
 
 ## Configuration
 
-An existing Windows Autopilot deployment profile was reviewed and used as part of the MD-102 endpoint-management environment.
+An existing Windows Autopilot deployment profile was reviewed as part of the MD-102 endpoint-management environment.
 
 ### Deployment Profile
 
@@ -27,7 +27,7 @@ An existing Windows Autopilot deployment profile was reviewed and used as part o
 | Assigned Devices | 0                                  |
 | Created          | 2026-10-01                         |
 
-The profile is designed for a user-driven Windows deployment where the device joins Microsoft Entra ID and is managed through Microsoft Intune.
+The profile is designed for a user-driven Windows deployment in which the device joins Microsoft Entra ID and is subsequently managed through Microsoft Intune.
 
 ## Enrollment Status Page
 
@@ -35,7 +35,7 @@ The Microsoft Intune Enrollment Status Page (ESP) was also reviewed.
 
 The existing default ESP configuration was retained rather than creating or modifying a tenant-wide replacement profile.
 
-This demonstrates the relationship between Windows Autopilot deployment profiles and the Enrollment Status Page during Windows provisioning.
+This demonstrated the relationship between an Autopilot deployment profile and the Enrollment Status Page during Windows provisioning.
 
 ## Autopilot Device Status
 
@@ -53,9 +53,11 @@ The existing deployment profile was therefore documented without making unnecess
 
 The Autopilot deployment profile configuration was reviewed in Microsoft Intune.
 
-The lab environment already had a Windows 11 device that was successfully Microsoft Entra joined and Intune managed, providing a reference point for the desired endpoint-management state.
+The lab environment already contained a Windows 11 device that was successfully Microsoft Entra joined and Intune managed. This provided a reference point for the desired endpoint-management state.
 
-The Autopilot device-registration workflow itself was not treated as fully validated because the tenant's Autopilot device synchronization had not completed.
+However, the Autopilot device-registration and deployment workflow itself was **not fully validated** because the tenant's Autopilot device synchronization had not completed.
+
+The successful Entra join and Intune enrollment of `INTUNE-USER` should therefore not be interpreted as proof that Autopilot performed the enrollment.
 
 ## Skills Demonstrated
 
@@ -66,9 +68,16 @@ The Autopilot device-registration workflow itself was not treated as fully valid
 * Enrollment Status Page concepts
 * Autopilot device registration and synchronization
 * Safe management of tenant-wide enrollment settings
+* Distinguishing profile configuration from deployment validation
 
 ## Outcome
 
-LAB-11 demonstrated how Windows Autopilot deployment profiles are configured and how they relate to Microsoft Entra join, Intune enrollment, and the Enrollment Status Page.
+LAB-11 demonstrated how a Windows Autopilot deployment profile is configured and how it relates to Microsoft Entra join, Intune enrollment, and the Enrollment Status Page.
 
 The existing tenant configuration was preserved without unnecessary changes to the default Enrollment Status Page or creation of duplicate Autopilot profiles.
+
+## Evidence Status
+
+**Status: Configured / Not End-to-End Validated**
+
+The deployment profile configuration was validated. Actual Autopilot device registration, synchronization, and end-to-end OOBE deployment were not validated.
