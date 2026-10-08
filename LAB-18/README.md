@@ -23,7 +23,7 @@ At the time of validation:
 | Baseline                 | 16                |
 | Status                   | Insufficient data |
 
-The low score was not treated as an endpoint failure. Endpoint Analytics requires sufficient telemetry and device population data before meaningful organizational analytics can be produced.
+The score of zero was not interpreted as an endpoint failure. Endpoint Analytics requires sufficient telemetry and device population data before meaningful organizational analytics can be produced.
 
 ## Device Scores
 
@@ -32,7 +32,7 @@ The Device scores section showed:
 * Devices: `0`
 * `INTUNE-USER`: Not listed
 
-This indicated that the test environment did not yet have enough Endpoint Analytics data available for device-level scoring.
+This indicated that the test environment did not yet have sufficient Endpoint Analytics data available for device-level scoring.
 
 ## Model Scores
 
@@ -40,7 +40,7 @@ Model scores showed:
 
 `No results`
 
-The environment did not meet the minimum device population required to generate model-level results.
+The environment did not have sufficient data to generate model-level results.
 
 ## Anomalies
 
@@ -60,13 +60,13 @@ No endpoint anomalies were reported during the validation period.
 
 The Endpoint Analytics interface displayed information regarding the Advanced Analytics add-on.
 
-The lab environment did not require enabling the add-on because the objective was to understand and evaluate the standard Endpoint Analytics experience.
+The lab environment did not require enabling the add-on because the objective was to evaluate the standard Endpoint Analytics experience.
 
 ## Validation
 
 Endpoint Analytics was successfully accessed and reviewed through Microsoft Intune.
 
-The available data confirmed that the tenant did not yet have sufficient telemetry or device population for meaningful endpoint scoring.
+The available results showed that the tenant did not yet have sufficient telemetry or device population for meaningful endpoint scoring.
 
 This is an important administrative observation: an Endpoint Analytics score of zero with an **Insufficient data** status does not necessarily indicate poor endpoint health.
 
@@ -74,14 +74,14 @@ This is an important administrative observation: an Endpoint Analytics score of 
 
 Endpoint Analytics becomes more useful as an organization accumulates endpoint telemetry.
 
-An administrator should therefore distinguish between:
+An administrator should distinguish between:
 
 * A genuinely poor endpoint score
 * Missing or insufficient telemetry
 * An insufficient number of devices
 * A newly configured environment
 
-This prevents administrators from incorrectly treating missing analytics data as an endpoint failure.
+This prevents missing analytics data from being incorrectly interpreted as an endpoint-health failure.
 
 ## Skills Demonstrated
 
@@ -97,6 +97,14 @@ This prevents administrators from incorrectly treating missing analytics data as
 
 LAB-18 demonstrated how Endpoint Analytics can be used to monitor Windows endpoint performance and user experience.
 
-The lab also demonstrated an important troubleshooting principle: **Insufficient data is different from a poor endpoint-health result.**
+The lab also demonstrated an important troubleshooting principle:
 
-The environment was successfully validated, with Endpoint Analytics reporting insufficient data rather than endpoint anomalies or failures.
+> **Insufficient data is different from a poor endpoint-health result.**
+
+The Endpoint Analytics interface and available reporting data were reviewed successfully, but the environment did not yet contain sufficient telemetry for meaningful endpoint scoring.
+
+## Evidence Status
+
+**Status: Reviewed / Insufficient Data**
+
+Endpoint Analytics was accessed and evaluated, but meaningful device-level analytics were not available in the test environment.
