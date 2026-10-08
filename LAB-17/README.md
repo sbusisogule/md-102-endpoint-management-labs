@@ -2,7 +2,7 @@
 
 ## Objective
 
-Configure and evaluate Windows Update compliance requirements for managed Windows 11 devices using Microsoft Intune.
+Document and evaluate how Windows Update requirements can be incorporated into a Microsoft Intune device-compliance strategy for managed Windows 11 devices.
 
 ## Environment
 
@@ -16,11 +16,13 @@ Configure and evaluate Windows Update compliance requirements for managed Window
 
 LAB-17 focused on the relationship between Windows Update management and device compliance.
 
-The lab demonstrated how administrators can establish operating-system requirements and use Microsoft Intune compliance policies to identify devices that do not meet the organization's required Windows baseline.
+The lab examined how administrators can establish supported Windows operating-system requirements and use Microsoft Intune compliance policies to evaluate whether managed devices meet the organization's baseline.
+
+Specific compliance-policy configuration and validation were subsequently demonstrated in other labs, including LAB-22.
 
 ## Compliance Approach
 
-The compliance configuration considered:
+The compliance workflow considered:
 
 * Minimum supported Windows version
 * Windows security requirements
@@ -28,23 +30,23 @@ The compliance configuration considered:
 * Noncompliance actions
 * Pilot-group deployment
 
-The `MD102-Pilot-Users` group was used as the controlled deployment scope.
+The `MD102-Pilot-Users` group was used throughout the lab environment as the controlled pilot scope.
 
 ## Validation
 
-The compliance policy was reviewed in Microsoft Intune.
+The compliance workflow was reviewed through Microsoft Intune.
 
-The Windows 11 test device was already running Windows 11 25H2, providing an appropriate operating-system baseline for the lab.
+The Windows 11 test device was already running Windows 11 Enterprise 25H2, providing an appropriate operating-system baseline for the lab environment.
 
-Intune compliance reporting was allowed to remain asynchronous where necessary rather than delaying the lab for reporting changes.
+Intune compliance reporting can be asynchronous. The lab therefore documents the compliance-management workflow rather than claiming a specific endpoint compliance result that was not independently validated for LAB-17.
 
 ## Conditional Access Relationship
 
 Device compliance can be used as a condition for Microsoft Entra Conditional Access.
 
-The broader MD-102 environment included a Conditional Access policy configured in **Report-only** mode that required a device to be marked as compliant.
+The broader MD-102 environment included a Conditional Access policy configured in **Report-only** mode requiring devices to be marked as compliant.
 
-This allowed the compliance workflow to be evaluated without immediately enforcing access restrictions.
+This allowed the relationship between compliance evaluation and Conditional Access to be demonstrated without immediately enforcing access restrictions.
 
 ## Administrative Workflow
 
@@ -55,21 +57,30 @@ A practical endpoint-management workflow is:
 3. Assign it to a pilot group.
 4. Monitor device compliance.
 5. Investigate noncompliant devices.
-6. Remediate issues.
+6. Remediate identified issues.
 7. Use Conditional Access to enforce compliance when appropriate.
 
 ## Skills Demonstrated
 
-* Microsoft Intune compliance policies
+* Microsoft Intune compliance management
 * Windows 11 compliance requirements
 * Operating-system version management
-* Device compliance monitoring
+* Device compliance concepts
 * Conditional Access concepts
 * Pilot deployment
 * Endpoint compliance troubleshooting
+* Compliance-policy planning
 
 ## Outcome
 
-LAB-17 demonstrated how Windows operating-system requirements can be incorporated into an Intune compliance strategy.
+LAB-17 demonstrated the relationship between Windows Update requirements, Intune compliance evaluation, and Conditional Access.
 
-The lab reinforced the relationship between device configuration, compliance evaluation, and Conditional Access enforcement.
+The lab reinforced that update management and compliance management are related but distinct administrative functions.
+
+Concrete compliance-policy configuration and endpoint validation are documented in the relevant labs elsewhere in this portfolio.
+
+## Evidence Status
+
+**Status: Configured / Compliance Workflow Documented**
+
+LAB-17 documents the Windows Update compliance workflow. Specific compliance-policy settings and endpoint results are documented separately where independently validated.
