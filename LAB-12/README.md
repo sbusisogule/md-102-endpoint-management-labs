@@ -2,7 +2,7 @@
 
 ## Objective
 
-Collect a Windows device's hardware hash for use in the Windows Autopilot device registration workflow.
+Document the Windows Autopilot hardware-hash collection process used to prepare a Windows device for Autopilot registration.
 
 ## Environment
 
@@ -16,41 +16,37 @@ Collect a Windows device's hardware hash for use in the Windows Autopilot device
 
 Windows Autopilot uses device-specific hardware information to identify and register Windows devices.
 
-This lab demonstrates the hardware-hash collection process without importing an already-enrolled VM directly into the Autopilot device list.
+This lab focused on the hardware-information collection stage of the Autopilot workflow rather than claiming successful registration of the already-enrolled test VM.
 
 ## Hardware Hash Collection
 
-The Windows Autopilot information script was used to collect the device hardware information.
-
-The following PowerShell script was used:
+The Windows Autopilot information script was used as the collection method:
 
 ```powershell
 Get-WindowsAutopilotInfo.ps1
 ```
 
-The resulting hardware information was exported to:
+The documented output location was:
 
 ```text
 C:\AutopilotHWID.csv
 ```
 
-## CSV Validation
-
-The generated CSV was reviewed to confirm that the expected Autopilot registration information was present.
-
-The CSV contained fields including:
-
-* Device Serial Number
-* Windows Product ID
-* Hardware Hash
-
-The hardware hash was not published in this repository because it is device-specific information.
+The resulting hardware information is device-specific and should not be committed to a public GitHub repository.
 
 ## Registration Workflow
 
-The collected CSV represents the information that can be used when registering a physical or virtual Windows device with Windows Autopilot.
+The collected hardware information represents the type of information used during Windows Autopilot device registration.
 
-The lab demonstrates the collection stage of the Autopilot registration workflow rather than claiming that the test VM was successfully registered as an Autopilot device.
+The lab intentionally does **not** claim that `INTUNE-USER` was successfully registered as an Autopilot device.
+
+This distinction is important because the test VM was already enrolled and managed through Microsoft Entra ID and Intune. Autopilot registration and deployment are separate stages of the endpoint lifecycle.
+
+## Security Considerations
+
+Hardware-hash information is specific to a device and should be treated as sensitive device-registration information.
+
+The hardware hash and generated CSV were therefore not included in this public repository.
 
 ## Skills Demonstrated
 
@@ -59,10 +55,17 @@ The lab demonstrates the collection stage of the Autopilot registration workflow
 * PowerShell administration
 * Windows device identification
 * Autopilot registration workflow
-* Handling device-specific registration information securely
+* Handling device-specific registration information
+* Protecting device-specific registration data
 
 ## Outcome
 
-LAB-12 successfully demonstrated how to collect the Windows Autopilot hardware hash and export the required device information to a CSV file.
+LAB-12 documented the Windows Autopilot hardware-hash collection workflow and the role of the collected information in the device-registration process.
 
-The generated `C:\AutopilotHWID.csv` contained the expected registration fields. The device-specific hardware hash was intentionally excluded from the GitHub repository.
+The lab does not claim successful Autopilot registration or deployment of `INTUNE-USER`.
+
+## Evidence Status
+
+**Status: Collection Process Documented**
+
+The repository intentionally excludes the device-specific hardware hash and generated CSV.
