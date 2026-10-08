@@ -1,8 +1,8 @@
-# LAB-10 — Windows Endpoint Security Policy
+# LAB-10 — Intune Policy Assignment and Conflict Management
 
 ## Objective
 
-Configure and evaluate an additional Windows endpoint security policy through Microsoft Intune as part of the MD-102 pilot environment.
+Create, assign, review, and manage an additional Windows endpoint-management policy in Microsoft Intune while evaluating its interaction with other policies in the MD-102 pilot environment.
 
 ## Environment
 
@@ -14,21 +14,23 @@ Configure and evaluate an additional Windows endpoint security policy through Mi
 
 ## Configuration
 
-LAB-10 was created as part of the Windows endpoint-management policy set used throughout the MD-102 lab environment.
+LAB-10 was created as part of the Windows endpoint-management policy exercises in the MD-102 lab environment.
 
 The policy was initially assigned to the `MD102-Pilot-Users` group for testing and evaluation.
 
-During the lab sequence, a policy overlap/conflict was identified with the later Windows Update Ring configuration in LAB-20.
+During the wider lab sequence, an overlap/conflict was identified involving the later Windows Update Ring configuration in LAB-20.
 
-To avoid maintaining competing configurations, the LAB-10 assignment was subsequently removed.
+To avoid maintaining competing assignments, the LAB-10 assignment was subsequently removed.
 
 ## Policy Management
 
-The lab demonstrated an important Intune administration principle:
+This lab demonstrated an important Microsoft Intune administration principle:
 
-> Multiple policies can target the same device, and overlapping settings can result in conflicts or unexpected configuration behaviour.
+> Multiple policies can target the same device, and overlapping configuration settings can result in conflicts or unexpected behaviour.
 
-Rather than leaving potentially conflicting assignments in place, the LAB-10 assignment was removed so that the later update-management configuration could be evaluated independently.
+Rather than leaving a potentially conflicting assignment in place, the LAB-10 assignment was removed so that the later update-management configuration could be evaluated independently.
+
+This represents normal administrative policy hygiene rather than a failed configuration.
 
 ## Assignment
 
@@ -41,26 +43,33 @@ Rather than leaving potentially conflicting assignments in place, the LAB-10 ass
 
 ## Validation
 
-The policy configuration was reviewed in Microsoft Intune.
+The policy configuration and assignment were reviewed in Microsoft Intune.
 
-The assignment was subsequently removed as part of policy conflict management.
+The assignment was subsequently removed as part of managing policy overlap with the later LAB-20 configuration.
 
-This was intentional and was not treated as a failed lab.
+Endpoint-level successful application of the LAB-10 policy is **not claimed** because the assignment was removed before a definitive endpoint result was established.
 
 ## Skills Demonstrated
 
 * Microsoft Intune policy creation
-* Policy assignments
+* Policy assignment management
 * Pilot-group management
 * Identifying policy overlap
-* Managing Intune configuration conflicts
-* Understanding the importance of policy scope
+* Managing configuration conflicts
+* Understanding policy scope
 * Maintaining a clean endpoint-management baseline
+* Evaluating policy interactions
 
 ## Outcome
 
-LAB-10 demonstrated the administrative process of creating, assigning, reviewing, and managing an Intune policy while considering interactions with other endpoint-management policies.
+LAB-10 demonstrated the administrative process of creating and assigning an Intune policy, reviewing its interaction with the wider policy environment, and deliberately removing an assignment when policy overlap was identified.
 
-The assignment was intentionally removed later in the lab sequence to prevent configuration conflicts with LAB-20.
+The assignment was removed later in the lab sequence to prevent configuration conflicts with LAB-20.
 
-This reflects a realistic endpoint-management workflow in which administrators must manage policy interactions rather than simply create policies in isolation.
+This reflects a realistic endpoint-management workflow in which administrators must consider policy interactions and assignment scope rather than managing policies in isolation.
+
+## Evidence Status
+
+**Status: Configured / Assignment Removed**
+
+No endpoint-level successful application of the LAB-10 policy is claimed.
