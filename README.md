@@ -34,54 +34,54 @@ The lab environment was built around a Microsoft Entra ID tenant, Microsoft Intu
 
 ## Identity, Enrollment & Configuration
 
-| Lab                | Topic                                  | Status   |
-| ------------------ | -------------------------------------- | -------- |
-| [LAB-00](./LAB-00) | Environment & GitHub Setup             | Complete |
-| [LAB-01](./LAB-01) | Windows 11 Standard Configuration      | Complete |
-| [LAB-02](./LAB-02) | Windows 11 Basic Compliance            | Complete |
-| [LAB-03](./LAB-03) | Conditional Access                     | Complete |
-| [LAB-04](./LAB-04) | Windows Hello for Business             | Complete |
-| [LAB-05](./LAB-05) | Windows LAPS                           | Complete |
-| [LAB-06](./LAB-06) | Microsoft Store Application Deployment | Complete |
+| Lab                                                                                       | Topic                                  | Status   |
+| ----------------------------------------------------------------------------------------- | -------------------------------------- | -------- |
+| [LAB-00](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-00) | Environment & GitHub Setup             | Complete |
+| [LAB-01](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-01) | Windows 11 Standard Configuration      | Complete |
+| [LAB-02](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-02) | Windows 11 Basic Compliance            | Complete |
+| [LAB-03](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-03) | Conditional Access                     | Complete |
+| [LAB-04](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-04) | Windows Hello for Business             | Complete |
+| [LAB-05](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-05) | Windows LAPS                           | Complete |
+| [LAB-06](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-06) | Microsoft Store Application Deployment | Complete |
 
 ## Endpoint Security
 
-| Lab                | Topic                                | Status                    |
-| ------------------ | ------------------------------------ | ------------------------- |
-| [LAB-07](./LAB-07) | Microsoft Defender Antivirus         | Complete                  |
-| [LAB-08](./LAB-08) | Windows Firewall                     | Complete                  |
-| [LAB-09](./LAB-09) | Firewall RDP Rule                    | Complete                  |
-| [LAB-10](./LAB-10) | Endpoint Security Policy             | Complete                  |
-| [LAB-11](./LAB-11) | Windows Autopilot Deployment Profile | Complete                  |
-| [LAB-12](./LAB-12) | Windows Autopilot Hardware Hash      | Complete                  |
-| [LAB-13](./LAB-13) | Windows BitLocker                    | Complete                  |
-| [LAB-14](./LAB-14) | Endpoint Security Baseline           | Complete                  |
-| [LAB-15](./LAB-15) | Lab Documentation Status             | Documentation unavailable |
+| Lab                                                                                       | Topic                                          | Status                                    |
+| ----------------------------------------------------------------------------------------- | ---------------------------------------------- | ----------------------------------------- |
+| [LAB-07](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-07) | Microsoft Defender Antivirus                   | Complete                                  |
+| [LAB-08](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-08) | Windows Firewall                               | Complete                                  |
+| [LAB-09](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-09) | Firewall RDP Rule                              | Complete                                  |
+| [LAB-10](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-10) | Intune Policy Assignment & Conflict Management | Configured / Assignment Removed           |
+| [LAB-11](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-11) | Windows Autopilot Deployment Profile           | Configured / Not End-to-End Validated     |
+| [LAB-12](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-12) | Windows Autopilot Hardware Hash                | Collection Documented                     |
+| [LAB-13](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-13) | Windows BitLocker                              | Configured / Assignment Documented        |
+| [LAB-14](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-14) | Endpoint Security Baseline                     | Configured / Security Baseline Documented |
+| [LAB-15](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-15) | Lab Documentation Status                       | Documentation Unavailable                 |
 
 ## Endpoint Analytics & Windows Management
 
-| Lab                | Topic                                | Status     |
-| ------------------ | ------------------------------------ | ---------- |
-| [LAB-16](./LAB-16) | Windows Update Management            | Complete   |
-| [LAB-17](./LAB-17) | Windows Update Compliance            | Complete   |
-| [LAB-18](./LAB-18) | Endpoint Analytics                   | Complete   |
-| [LAB-19](./LAB-19) | Windows Firewall Service Remediation | Configured |
-| [LAB-20](./LAB-20) | Windows Update Ring                  | Configured |
-| [LAB-21](./LAB-21) | Windows 11 Feature Update            | Configured |
-| [LAB-22](./LAB-22) | Windows Update Compliance            | Complete   |
+| Lab                                                                                       | Topic                                | Status                                      |
+| ----------------------------------------------------------------------------------------- | ------------------------------------ | ------------------------------------------- |
+| [LAB-16](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-16) | Windows Update Management            | Configured / Management Concepts Documented |
+| [LAB-17](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-17) | Windows Update Compliance            | Configured / Compliance Workflow Documented |
+| [LAB-18](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-18) | Endpoint Analytics                   | Reviewed / Insufficient Data                |
+| [LAB-19](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-19) | Windows Firewall Service Remediation | Configured                                  |
+| [LAB-20](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-20) | Windows Update Ring                  | Configured                                  |
+| [LAB-21](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-21) | Windows 11 Feature Update            | Configured                                  |
+| [LAB-22](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-22) | Windows Update Compliance            | Complete                                    |
 
 ## Application Management & Automation
 
-| Lab                | Topic                                    | Status     |
-| ------------------ | ---------------------------------------- | ---------- |
-| [LAB-23](./LAB-23) | Win32 Application Deployment & Detection | Complete   |
-| [LAB-24](./LAB-24) | Windows Time Service Remediation         | Configured |
+| Lab                                                                                       | Topic                                    | Status     |
+| ----------------------------------------------------------------------------------------- | ---------------------------------------- | ---------- |
+| [LAB-23](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-23) | Win32 Application Deployment & Detection | Complete   |
+| [LAB-24](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-24) | Windows Time Service Remediation         | Configured |
 
 ## Capstone
 
-| Lab                | Topic                              | Status   |
-| ------------------ | ---------------------------------- | -------- |
-| [LAB-25](./LAB-25) | Final Integrated Endpoint Scenario | Complete |
+| Lab                                                                                       | Topic                              | Status   |
+| ----------------------------------------------------------------------------------------- | ---------------------------------- | -------- |
+| [LAB-25](https://github.com/sbusisogule/md-102-endpoint-management-labs/blob/main/LAB-25) | Final Integrated Endpoint Scenario | Complete |
 
 ---
 
@@ -216,6 +216,8 @@ The test device was validated for:
 * Windows 11 25H2
 * LAPS configuration
 
+The LAPS configuration was validated, but direct password retrieval was **not** successfully validated in the test environment.
+
 The final validation also demonstrated an important aspect of real-world administration: **not every Intune operation produces immediate reporting results**.
 
 Where a configuration could not be fully validated, the limitation has been recorded rather than presenting an unverified result as successful.
@@ -333,3 +335,4 @@ Microsoft Endpoint Management Lab Portfolio
 Technologies:
 
 `Microsoft Intune` · `Microsoft Entra ID` · `Windows 11` · `PowerShell` · `Microsoft 365`
+
